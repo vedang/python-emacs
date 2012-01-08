@@ -1,0 +1,12 @@
+* Python-Emacs
+This repository contains all the third party code required to make Emacs an awesome python IDE. Namely, it contains the latest versions of Pymacs and Rope and instructions on how to install them. I use this repository as a sub-module in my emacs configuration.
+
+* INSTALL
+1. Get the submodule code
+   git submodule init
+   git submodule update
+2. Compile the code that's been downloaded:
+   - Pymacs: run the make command, the compiled code should be in the build folder.
+3. Copy the Pymacs (inside the build folder! not the main one), Rope, Ropemacs and Ropemode folders inside plugins/python/ to /usr/local/lib/python2.6/dist-packages/
+(basically anywhere on PYTHONPATH)
+4. Profit
