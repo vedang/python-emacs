@@ -3,8 +3,8 @@ This repository contains all the third party code required to make Emacs an awes
 
 * INSTALL
 ** Get the submodule code:
-   git submodule init
-   git submodule update
+   - git submodule init
+   - git submodule update
 
 ** Compile the code that's been downloaded:
    - python-mode-config.el: this file contains extra sugar for an awesome experience. No compilation needed
@@ -19,7 +19,7 @@ This repository contains all the third party code required to make Emacs an awes
    - Emacs Lisp files to ~/.emacs.d (basically anywhere on the Emacs load-path)
    - pycheckers to /usr/bin (basically anywhere on the system path)
 
-** Profit
+** Profit!
 
 * Caveats
 ** caveat emptor:
