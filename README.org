@@ -6,7 +6,14 @@ This repository contains all the third party code required to make Emacs an awes
    git submodule init
    git submodule update
 2. Compile the code that's been downloaded:
-   - Pymacs: run the make command, the compiled code should be in the build folder.
-3. Copy the Pymacs (inside the build folder! not the main one), Rope, Ropemacs and Ropemode folders inside plugins/python/ to /usr/local/lib/python2.6/dist-packages/
-(basically anywhere on PYTHONPATH)
+   - python-mode-config.el: this file contains extra sugar for an awesome experience. No compilation needed
+   - Pymacs: run the make command, the compiled python code should be in the build folder and the pymacs.el file should be in the top-most folder
+   - Rope: run `python setup.py build`, the compiled code should be in the build folder
+   - Ropemode: run `python setup.py build`, the compiled code should be in the build folder
+   - Ropemacs: run `python setup.py build`, the compiled code should be in the build folder
+   - pycheckers: make the file executable
+3. Copy the compiled Python code to /usr/local/lib/python2.6/dist-packages/ (basically anywhere on PYTHONPATH) and the compiled Emacs Lisp files to ~/.emacs.d (basically anywhere on the Emacs load-path). Copy pycheckers to /usr/bin (basically anywhere on the system path)
 4. Profit
+
+* Caveats
+1. caveat emptor: python-mode-config.el is additional configuration for my personal benefit. It might not work as-is for you. For example, it currently expects auto-complete-mode to be present.
