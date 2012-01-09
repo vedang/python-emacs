@@ -1,3 +1,12 @@
 [submodule "Pymacs"]
 	path = Pymacs
 	url = git@github.com:vedang/Pymacs.git
+[submodule "Ropemode"]
+	path = Ropemode
+	url = git@github.com:vedang/Ropemode.git
+[submodule "Ropemacs"]
+	path = Ropemacs
+	url = git@github.com:vedang/Ropemacs.git
+[submodule "Rope"]
+	path = Rope
+	url = git@github.com:vedang/Rope.git
