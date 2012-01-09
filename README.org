@@ -2,11 +2,11 @@
 This repository contains all the third party code required to make Emacs an awesome python IDE. Namely, it contains the latest versions of Pymacs and Rope and instructions on how to install them. I use this repository as a sub-module in my emacs configuration.
 
 * INSTALL
-1. Get the submodule code
+** Get the submodule code:
    git submodule init
    git submodule update
 
-2. Compile the code that's been downloaded:
+** Compile the code that's been downloaded:
    - python-mode-config.el: this file contains extra sugar for an awesome experience. No compilation needed
    - Pymacs: run the make command, the compiled python code should be in the build folder and the pymacs.el file should be in the top-most folder
    - Rope: run `python setup.py build`, the compiled code should be in the build folder
@@ -14,9 +14,13 @@ This repository contains all the third party code required to make Emacs an awes
    - Ropemacs: run `python setup.py build`, the compiled code should be in the build folder
    - pycheckers: make the file executable
 
-3. Copy the compiled Python code to /usr/local/lib/python2.6/dist-packages/ (basically anywhere on PYTHONPATH) and the compiled Emacs Lisp files to ~/.emacs.d (basically anywhere on the Emacs load-path). Copy pycheckers to /usr/bin (basically anywhere on the system path)
+** Copy the compiled code:
+   - Python code to /usr/local/lib/python2.6/dist-packages/ (basically anywhere on PYTHONPATH)
+   - Emacs Lisp files to ~/.emacs.d (basically anywhere on the Emacs load-path)
+   - pycheckers to /usr/bin (basically anywhere on the system path)
 
-4. Profit
+** Profit
 
 * Caveats
-1. caveat emptor: python-mode-config.el is additional configuration for my personal benefit. It might not work as-is for you. For example, it currently expects auto-complete-mode to be present.
+** caveat emptor:
+   python-mode-config.el is additional configuration for my personal benefit. It might not work as-is for you. For example, it currently expects auto-complete-mode to be present.
