@@ -12,7 +12,7 @@ This repository contains all the third party code required to make Emacs an awes
    - Rope: run `python setup.py build`, the compiled code should be in the build folder
    - Ropemode: run `python setup.py build`, the compiled code should be in the build folder
    - Ropemacs: run `python setup.py build`, the compiled code should be in the build folder
-   - pycheckers: make the file executable
+   - pycheckers: get the pre-requisites (pyflakes and pycheckers). `sudo pip install pyflakes pep8`. make the pycheckers file executable.
 
 ** Copy the compiled code:
    - Python code to /usr/local/lib/python2.6/dist-packages/ (basically anywhere on PYTHONPATH)
