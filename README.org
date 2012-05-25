@@ -15,7 +15,7 @@ This repository contains all the third party code required to make Emacs an awes
    - pycheckers: get the pre-requisites (pyflakes and pycheckers). `sudo pip install pyflakes pep8`. make the pycheckers file executable.
 
 ** Copy the compiled code:
-   - Python code to /usr/local/lib/python2.6/dist-packages/ (basically anywhere on PYTHONPATH)
+   - Python code to /usr/local/lib/python2.7/dist-packages/ (basically anywhere on PYTHONPATH)
    - Emacs Lisp files to ~/.emacs.d (basically anywhere on the Emacs load-path)
    - pycheckers to /usr/bin (basically anywhere on the system path)
 
