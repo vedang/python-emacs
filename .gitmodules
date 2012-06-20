@@ -1,0 +1,12 @@
+[submodule "lib/ropemode"]
+	path = lib/ropemode
+	url = git://github.com/vedang/Ropemode.git
+[submodule "lib/rope"]
+	path = lib/rope
+	url = git://github.com/vedang/Rope.git
+[submodule "lib/ropemacs"]
+	path = lib/ropemacs
+	url = git://github.com/vedang/Ropemacs.git
+[submodule "lib/pymacs"]
+	path = lib/pymacs
+	url = git://github.com/vedang/Pymacs.git
