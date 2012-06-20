@@ -1,7 +1,7 @@
 ;;; python-mode-config.el --- settings for python
 ;;; Author: Vedang Manerikar
 ;;; Created on: 09 Jan 2012
-;;; Time-stamp: "2012-01-09 12:40:19 vedang"
+;;; Time-stamp: "2012-06-22 01:02:02 vedang"
 ;;; Copyright (c) 2012 Vedang Manerikar <vedang.manerikar@gmail.com>
 
 ;; This file is not part of GNU Emacs.
@@ -46,5 +46,14 @@
 
 (add-hook 'python-mode-hook 'ac-python-mode-setup)
 (add-hook 'rope-open-project-hook 'ac-nropemacs-setup)
+
+(defun vedang/python-mode-settings ()
+  (when (eq major-mode 'python-mode)
+    (flyspell-prog-mode)))
+
+
+(add-hook 'find-file-hook 'vedang/python-mode-settings)
+(define-key python-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
+
 
 (provide 'python-mode-config)
