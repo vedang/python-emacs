@@ -10,3 +10,4 @@
 [submodule "lib/pymacs"]
 	path = lib/pymacs
 	url = git://github.com/vedang/Pymacs.git
+    ignore = dirty
