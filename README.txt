@@ -46,3 +46,4 @@ repository as a sub-module in my emacs configuration.
    your own with older versions of Emacs.
  - For unleashing the full power of this configuration, you should
    install and use autocomplete to provide python completion
+ - You should read-up on Rope in lib/rope/docs/ to understand how to use it
